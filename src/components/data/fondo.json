@@ -1,0 +1,18 @@
+[
+    {
+      "nombre": "React",
+      "imagen" :"/fondo/react.jfif",
+      "edad": 30,
+      "ciudad": "Ciudad A"
+    },
+    {
+      "nombre": "María",
+      "edad": 25,
+      "ciudad": "Ciudad B"
+    },
+    {
+      "nombre": "Carlos",
+      "edad": 35,
+      "ciudad": "Ciudad C"
+    }
+  ]

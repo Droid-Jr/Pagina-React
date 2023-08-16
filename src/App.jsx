@@ -15,25 +15,27 @@ import RouterDoms from "./pages/RouterDoms";
 import Reduxs from "./pages/Reduxs";
 import Snipess from "./pages/Snipess";
 import NavBard from "./components/ui/NavBard";
-import { useSelector } from "react-redux";
+import WelCome from "./pages/WelCome";
 
 
 
 function App() {
 
-  const users = useSelector(state => state.user)
+  const token = localStorage.getItem("token");
+ 
 
 
   return (
     <HashRouter>
       {
-        users !== '' && <NavBard />
+       token && <NavBard />
       }
       
       <Routes>
-        <Route path="/" element={<Login />} />
+        <Route path="/login" element={<Login />} />
 
         <Route element={<ProtecRout />}>
+          <Route path="/" element={<WelCome/>}/>
           <Route path="/conpos" element={<ComponentesReact />} />
           <Route path="/usetate" element={<UsestateReact />} />
           <Route path="/domvirtual" element={<DomVirtual />} />

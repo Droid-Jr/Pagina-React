@@ -8,7 +8,7 @@ function ProtecRout() {
   if (users !== "") {
   return   <Outlet />
   } else {
-   return <Navigate to={"/"}/>
+   return <Navigate to={"/login"}/>
   }
 }
 export default ProtecRout;
